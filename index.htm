@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>vasemkin</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <ul class="parallax">
-           <li class="item">
-               <div class="par-bckg img1">
-                   <div class="inside">
-                       <h1>vasemkin.github.io</h1>
-                       <p>это моя домашняя страница для github pages</p>
-                       <div id="cloud">
-                       <ul id="scene" class="scene">
-                           <li class="layer" data-depth="0.1"><h3>навыки</h3></li>
-                <li class="layer" data-depth="0.5"><p>HTML</p></li>>
-                <li class="layer" data-depth="0.7"><p>CSS</p></li>
-                <li class="layer" data-depth="0.9"><p>JavaScript</p></li>
-                <li class="layer" data-depth="1"><p>адаптивная верстка</p></li>
-            </ul>
-                   </div>
-               </div>
-            </li>
-           <li class="item">
-               <div class="par-bckg img2">
-                   <div class="inside">
-                       <h1>примеры моих работ</h1>
-                       <p>можно посмотреть в моем профиле</p>
-                       <br />
-                       <div class="link-flex">
-                        <a href="https://github.com/vasemkin" target="_blank" class="btn">github</a>
-                        <a href="mailto:vasemkin@ya.ru" target="_blank" class="btn">contact</a>
-                       </div>
+    <div class="wrapper">
+        <div class="header">
+
+            <div class="logo">
+                <h3>semkin</h3>
+            </div>
+            <div class="header_nav">
+                <ul class="nav">
+                    <li><a class="nav_item" href="#information">info</a></li>
+                    <li><a class="nav_item" href="#works">works</a></li>
+                    <li><a class="nav_item" href="#contact">contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="main_flex">
+                <div class="column">
+                    <img src="img/ya.jpg" alt="mypic" class="column_ava">
+                    <h5 class="column_name">vladislav</h5>
+                    <p class="column_position">web developer</p>
+                    <p class="column_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ab debitis maxime illum expedita et vel, quis commodi cupiditate molestias vitae sapiente voluptas quo, blanditiis, architecto animi ullam laborum ad?</p>
+                </div>
+
+                <div class="content">
+                    <div class="paragraph" id="info">
+                        <h4>who am i?</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, minima officiis enim aspernatur necessitatibus corrupti magnam deleniti tempore eveniet tenetur dignissimos eius earum voluptas consectetur blanditiis? Sint, sed praesentium? Necessitatibus!</p>
                     </div>
-            </li>
-        </ul>
-        <script src="js/parallax.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-    </body>
+    
+                    <div class="assertive">
+                        <div class="assertive_item">
+                            <h5 class="assertive_title">creative</h5>
+                            <p class="assertive_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta dolores unde quisquam temporibus voluptatibus sit autem porro eaque, distinctio dolorum earum consectetur esse nesciunt dignissimos, recusandae sunt non vero?</p>
+                        </div>
+                        <div class="assertive_item">
+                            <h5 class="assertive_title">effective</h5>
+                            <p class="assertive_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta dolores unde quisquam temporibus voluptatibus sit autem porro eaque, distinctio dolorum earum consectetur esse nesciunt dignissimos, recusandae sunt non vero?</p>
+                        </div>
+                        <div class="assertive_item">
+                            <h5 class="assertive_title">productive</h5>
+                            <p class="assertive_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta dolores unde quisquam temporibus voluptatibus sit autem porro eaque, distinctio dolorum earum consectetur esse nesciunt dignissimos, recusandae sunt non vero?</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="paragraph">
+                        <h4>i love lorem</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas asperiores fugiat consectetur sit, odio facilis amet soluta quod dolore aliquam debitis quisquam ex eum odit iure id labore qui optio?</p>
+                    </div>
+
+                    
+                    <div class="paragraph" id="works">
+                        <h4>my works:</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas asperiores fugiat consectetur sit, odio facilis amet soluta quod dolore aliquam debitis quisquam ex eum odit iure id labore qui optio?</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
 </html>
