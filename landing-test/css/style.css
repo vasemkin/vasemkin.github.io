@@ -1608,6 +1608,8 @@ a.video-app{
 
   .list-stat{
     flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .list-stat>li{
@@ -1674,7 +1676,7 @@ a.video-app{
   .box-clients-item{
     flex-basis: 100%;
     max-width: 400px;
-    margin: 20px auto 30px auto;
+    margin: 20px auto 15px auto;
   }
 
 }
@@ -1808,4 +1810,18 @@ a.video-app{
   .page-form{
     background-size: 600%;
   }
+
+  .box-form-name .form_icon{
+    right: -28px;
+  }
+
+  .form-form input, .form-form textarea {
+    width: 89%;
+    padding: 25px 39px 25px 25px;
+  }
+
+  .page-plan {
+    padding-bottom: 0px;
+  }
+
 }
