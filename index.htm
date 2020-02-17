@@ -3,73 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>vasemkin</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
-
-            <div class="logo">
-                <h3>semkin</h3>
-            </div>
-            <div class="header_nav">
-                <ul class="nav">
-                    <li><a class="nav_item" href="#information">info</a></li>
-                    <li><a class="nav_item" href="#works">works</a></li>
-                    <li><a class="nav_item" href="#contact">contact</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="main">
-            <div class="main_flex">
-                <div class="column">
-                    <img src="img/ya.jpg" alt="mypic" class="column_ava">
-                    <h5 class="column_name">vladislav</h5>
-                    <p class="column_position">web developer</p>
-                    <p class="column_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ab debitis maxime illum expedita et vel, quis commodi cupiditate molestias vitae sapiente voluptas quo, blanditiis, architecto animi ullam laborum ad?</p>
-                </div>
-
-                <div class="content">
-                    <div class="paragraph" id="info">
-                        <h4>who am i?</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, minima officiis enim aspernatur necessitatibus corrupti magnam deleniti tempore eveniet tenetur dignissimos eius earum voluptas consectetur blanditiis? Sint, sed praesentium? Necessitatibus!</p>
-                    </div>
+        <h3>hello!</h3>
+        <p>these are some of my works:</p>
     
-                    <div class="assertive">
-                        <div class="assertive_item">
-                            <h5 class="assertive_title">creative</h5>
-                            <p class="assertive_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta dolores unde quisquam temporibus voluptatibus sit autem porro eaque, distinctio dolorum earum consectetur esse nesciunt dignissimos, recusandae sunt non vero?</p>
-                        </div>
-                        <div class="assertive_item">
-                            <h5 class="assertive_title">effective</h5>
-                            <p class="assertive_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta dolores unde quisquam temporibus voluptatibus sit autem porro eaque, distinctio dolorum earum consectetur esse nesciunt dignissimos, recusandae sunt non vero?</p>
-                        </div>
-                        <div class="assertive_item">
-                            <h5 class="assertive_title">productive</h5>
-                            <p class="assertive_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta dolores unde quisquam temporibus voluptatibus sit autem porro eaque, distinctio dolorum earum consectetur esse nesciunt dignissimos, recusandae sunt non vero?</p>
-                        </div>
-                    </div>
+        <div class="content">
+            <div class="element">
+                <h4>react_table_z1</h4>
+                <p>my first go at react, a dynamic table with several features</p>
+                <ul>
+                    <li>pagination</li>
+                    <li>filtration</li>
+                    <li>adding data</li>
+                    <li>sorting data</li>
+                </ul>
 
-                    
-                    <div class="paragraph">
-                        <h4>i love lorem</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas asperiores fugiat consectetur sit, odio facilis amet soluta quod dolore aliquam debitis quisquam ex eum odit iure id labore qui optio?</p>
-                    </div>
-
-                    
-                    <div class="paragraph" id="works">
-                        <h4>my works:</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas asperiores fugiat consectetur sit, odio facilis amet soluta quod dolore aliquam debitis quisquam ex eum odit iure id labore qui optio?</p>
-                    </div>
-
-                </div>
-
+                <a href="https://github.com/vasemkin/react_table_z1" target="_blank">check it out!</a>
             </div>
+            
+            <div class="element">
+                <h4>landing_test_z2</h4>
+                <p>a weekend project, adaptive landing page based on a .psd</p>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>jquery</li>
+                    <li>responsive</li>
+                </ul>
+
+                <a href="https://github.com/vasemkin/react_table_z1" target="_blank">take me to it!</a>
+            </div>
+            
         </div>
     </div>
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.content').slick({
+                autoplay: false,
+                speed: 800,
+                lazyLoad: 'progressive',
+                arrows: true,
+                dots: false,
+            });
+        });
+    </script>
 </body>
 </html>
