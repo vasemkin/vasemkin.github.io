@@ -48,3 +48,16 @@ body{
 .element p, .element li{
     font-size: 14px;
 }
+
+.foot{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.foot span{
+    color: black;
+}
+
+.foot span:hover{
+    cursor: initial;
+}
