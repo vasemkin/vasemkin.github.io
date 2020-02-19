@@ -29,6 +29,10 @@ body{
     outline: none;
 }
 
+.oldlink{
+    font-size: 10px;
+}
+
 .slick-next{
     background: url(../img/next.svg);
     background-repeat: no-repeat;
