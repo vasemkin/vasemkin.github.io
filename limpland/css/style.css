@@ -1632,6 +1632,8 @@ a.video-app{
     height: 3px;
     padding: 0;
   }
+
+  
   .stick-dots .slick-dots li button:hover,
   .stick-dots .slick-dots li button:focus {
     opacity: 1;
@@ -1700,6 +1702,10 @@ a.video-app{
 
   h1{
     font-size: 40px;
+  }
+
+  .page-clients .slick-dots{
+    bottom: -20px;
   }
 
   .title-h2{
