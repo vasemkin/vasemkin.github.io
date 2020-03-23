@@ -1238,6 +1238,7 @@ html,body
 }
 
 @media(max-width:560px){
+    
     .slider-desc{
         width: 130%;
     }
@@ -1441,6 +1442,4 @@ html,body
     .slider-desc{
         width: 125%;
     }
-    
-
 }
