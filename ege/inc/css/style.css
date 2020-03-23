@@ -1,0 +1,1442 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic');
+
+/* colors:
+black : #263C4E;
+yellow : #FCB802;
+white : #fff;
+
+ctrl + f to change;
+*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.container{
+    max-width: 1260px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    margin-top: 70px;
+}
+
+.header__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    
+    color: #263C4E;
+}
+
+.logo__strength{
+    color: #FCB802;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu__item{
+    margin-right: 35px;
+
+    list-style-type: none;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    
+}
+
+.menu__scroller{
+    border: none;
+    background: transparent;
+    text-decoration: none;
+
+    cursor: pointer;
+    
+    color: #263C4E;
+}
+
+.menu__btn{
+    flex-basis: 29px;
+    height: 20px;
+
+    cursor: pointer;
+
+    border: none;
+    background: url(../img/menu.svg);
+    background-repeat: no-repeat;
+}
+
+.menu__btn:focus{
+    outline: none;
+}
+
+.btn{
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    color: #fff;
+    background: #FCB802;
+    
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: inherit;
+    text-decoration: none;
+
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.inpt{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    width: 100%;
+
+    background: #fff;
+    box-shadow: 0px 0px 32px rgba(130, 148, 155, 0.13);
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.inpt:focus{
+    outline: none;
+}
+
+/* INVITE */
+
+.invite{
+    margin-top: 45px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.invite__container{
+    flex-basis: 65%;
+}
+
+.invite__nosocial{
+    background: linear-gradient(180deg, #F5FAFB 85.42%, rgba(245, 250, 251, 0) 100%);
+    border-radius: 20px 0 0 20px;
+}
+
+.invite__social{
+    width: 440px;
+    margin: 0 auto;
+    padding-bottom: 0;
+
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invite__pic{
+    flex-basis: 35%;
+}
+
+.invite__inner{
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    width: 440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.invite__title{
+    max-width: 360px;
+    margin-bottom: 18px;
+    padding-bottom: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+
+    color: #263C4E;
+    }
+
+.invite__subtitle{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 26px;
+    padding-bottom: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #263C4E;
+}
+
+.invite__input{
+    padding: 10px 17px 10px 17px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.invite__btn{
+    position: absolute;
+    top: 278px;
+    right: 0px;
+
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.icon{
+    display: block;
+    width: 29px;
+    height: 28px;
+}
+
+.icon__ig{
+    background: url(../img/icon__ig.svg);
+}
+
+.icon__vk{
+    width: 28px;
+    background: url(../img/icon__vk.svg);
+}
+
+.icon__yt{
+    width: 28px;
+    height: 29px;
+    background: url(../img/icon__yt.svg);
+}
+
+.invite__subscribe{
+    font-size: 18px;
+    line-height: 21px;
+        
+    color: #263C4E;
+}
+
+/* PROS */
+
+.pros{
+    margin-top: 40px;
+}
+
+
+.pros__title{
+    margin-top: 0;
+    padding-top: 0;
+    
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #263C4E;
+}
+
+.pros__container{
+    background: #F5FAFB;
+    border-radius: 20px;
+    padding: 27px 90px;
+
+    display: flex;
+}
+
+.pros__noslider{
+    width: 375px;
+    margin-right: 80px;
+}
+
+.pros__subtitle{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.pros__description{
+    padding-bottom: 0;
+    margin-bottom: 66px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #263C4E;
+}
+
+.slider-desc__element{
+    transition: border .1s ease-out;
+
+    background-color: #fff;
+    width: 200px;
+    height: 257px;
+    margin-right: 20px;
+    
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.slider-desc__pic{
+    margin: 0 auto;
+    padding-top: 67px;
+    display: block;
+    width: 114px;
+    height: 57px;
+
+}
+
+.slider-desc__pic_author{
+    background: url(../img/slider__exauthor.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+
+.slider-desc__pic_approved{
+    background: url(../img/slider__approved.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+.slider-desc__pic_prepare{
+    background: url(../img/slider__prerpare.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.slider-desc__pic_inside{
+    background: url(../img/slider__inside.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+
+    height: 40px;
+    width: 40px;
+    padding-top: 82px;
+    background-size: contain;
+}
+
+.slider-desc__pic_homework{
+    background: url(../img/slider__homework.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+
+    height: 50px;
+    width: 50px;
+    padding-top: 75px;
+    background-size: contain;
+}
+
+.slider-desc__pic_exam{
+    background: url(../img/slider__exam.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+
+    height: 40px;
+    width: 40px;
+    padding-top: 82px;
+    background-size: contain;
+}
+
+
+
+.slider-desc__title{
+    margin: 13px auto 0;
+
+    width: 140px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #263C4E;
+}
+
+.slider-desc{
+    display: flex;
+}
+
+.slider-desc__more{
+    position: absolute;
+    bottom: 16px;
+    left: 25%;
+
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+
+    color: #263C4E;
+    text-decoration: underline;
+    
+}
+
+.slider-desc__more:focus{
+    outline: none;
+}
+
+
+
+/* ABOUT */
+
+.about{
+    margin-top: 100px;
+}
+
+.about__container{
+    max-width: 1040px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.about__card{
+    width: 420px;
+    height: 426px;
+    margin-right: 20px;
+
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(72, 81, 98, 0.06);
+
+    border-radius: 20px;
+}
+
+.about__name{
+    width: 183px;
+    margin: 8px auto 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center; 
+}
+
+
+.about__pic{
+    margin: 0 auto;
+    padding-top: 58px;
+    display: block;
+    width: 100px;
+    height: 158px;
+    background: url(../img/about__pic.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about__position{
+    width: 300px;
+    margin: 40px auto 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #263C4E;
+}
+
+.about__teacher{
+    text-align: center;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #263C4E;
+    
+}
+
+.about__facts{
+    width: 638px;
+    height: 245px;
+    padding-top: 40px;
+
+    background: #F5FAFB;
+    border-radius: 20px;
+}
+
+.about__fact{
+    max-width: 475px;
+    margin-left: 90px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #263C4E;
+}
+
+.about__fact_strong{
+    font-weight: 500;
+}
+
+.about__social{
+    width: 200px;
+    margin: 28px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* COURSES */
+
+.courses{
+    margin-top: 100px;
+}
+
+.courses__list{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.courses__title{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #263C4E;
+}
+
+.course{
+    flex-basis: 400px;
+    height: 121px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+
+    background: #F5FAFB;
+    border-radius: 20px;
+}
+
+.showmore__btn_hidden{
+    display: none;
+}
+
+.course__inline{
+    width: fit-content;
+    margin: 0 auto;
+
+    display: flex;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #263C4E;
+}
+
+.course__section{
+    margin: 0;
+    padding: 0;
+
+}
+
+.course__type{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    
+    color: #FCB802;
+}
+
+.course__date{
+    margin: 0;
+    padding: 0;
+
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.courses__img{
+    margin-right: 30px;
+}
+
+.showmore{
+    width: fit-content;
+    margin-left: auto;
+}
+
+.showmore__btn{
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    border: none;
+    background: transparent;
+    
+    text-decoration-line: underline;
+    
+    color: #263C4E;
+}
+
+.showmore__btn:focus{
+    outline: none;
+}
+
+/* WEBINARS */
+
+.webinars{
+    margin-top: 60px;
+}
+
+.webinars__title{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    
+    color: #263C4E;
+}
+
+.webinars__list{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.webinar{
+    width: 400px;
+    height: 167px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+    background: #F5FAFB;
+    border-radius: 20px;
+}
+
+.webinar__inline{
+    padding-top: 34px;
+    margin-left: 90px;
+    width: 257px;
+}
+
+.webinar__title{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #263C4E;
+
+    margin-bottom: 17px;
+}
+
+.webinar__date, .webinar__when{
+    margin-top: 0;
+    display: inline-block;
+
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.webinar__when{
+    margin-right: 20px;
+}
+
+/* REGISTRATION */
+.registration{
+    display: flex;
+    align-items: center;
+
+    margin-top: 100px;
+    height: 450px;
+
+    background: linear-gradient(180deg, #F5FAFB 0%, rgba(245, 250, 251, 0) 100%);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.registration__section{
+    flex-basis: 65%;
+}
+
+.registration__title{
+    width: 525px;
+    margin-left: 115px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    
+    color: #263C4E;
+
+}
+
+.form__title{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 40px;
+    
+    text-align: center;
+    
+    color: #263C4E;
+}
+
+.registration__form{
+    width: 311px;
+}
+
+.input{
+    border: 2px solid #FCB802;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    width: 100%;
+
+    margin-bottom: 15px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.form__btn{
+    width: 100%;    
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* SLIDER ONE */
+.slider-inner, .slider-desc, .about__facts, .about-slider{
+    min-width: 0;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+}
+
+.pros__container{
+    position: relative;
+}
+
+.slider-desc{
+    box-sizing: border-box;
+
+    width: 850px;
+    margin-left: 60px;
+    padding-left: 30px;
+}
+
+.slick-arrow:focus{
+    outline: none;
+}
+
+.about{
+    position: relative;
+}
+
+.about-slider{
+    width: 640px;
+    box-sizing: border-box;
+}
+
+.slick-arrow{
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 34px;
+
+    border: none;
+    font-size: 0;
+
+    width: 15px;
+    height: 25px;
+}
+
+.slick-active:focus{
+    outline: none;
+}
+
+.slider-desc .slick-arrow.slick-prev{
+    left: 310px;
+    background: url(../img/arrow__prev.svg) 0 0 / 100% no-repeat;
+}
+.slider-desc .slick-arrow.slick-next{
+    left: 438px;
+    background: url(../img/arrow__next.svg) 0 0 / 100% no-repeat;
+}
+
+.about-slider .slick-arrow.slick-prev{
+    background: none;
+    display: none;
+}
+
+.about-slider .slick-arrow.slick-next{
+    bottom: 50%;
+    right: 85px;
+    background: url(../img/arrow__next.svg) 0 0 / 100% no-repeat;
+}
+
+.about__teacher_top{
+    display: none
+}
+
+/* ANIM */
+
+.animated__link_up, .animated__link_down{
+    transition: .3s;
+}
+
+.animated__link_up:hover{
+    transform: scale(1.1);
+}
+
+.animated__link_down:hover{
+    transform: scale(0.9);
+}
+
+.slick-arrow{
+    transition: .3s;
+}
+
+.slick-arrow:hover{
+    transform: scale(1.1);
+}
+
+.slick-slider{
+    margin: 0 auto;
+}
+
+.slick-track{
+    padding-left: 10px;
+}
+
+/* MENU */
+
+.menu_mobile{
+    margin-top: 0;
+
+    z-index: 100;
+    height: 100%;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 30px;
+
+    background: #fff;
+    flex-direction: column;
+}
+
+.menu__item_mobile{
+    margin-bottom: 30px;
+    font-size: 15px;
+    align-self: flex-end;
+}
+
+.menu__close{
+    padding: 0 8.5px;
+}
+
+.background__darken{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 50;
+}
+
+/* -----MEDIA----- */
+
+@media(max-width:1400px){
+    .about-slider .slick-arrow.slick-next{
+        right: 5px;
+    }
+}
+
+@media(min-width:1000px) and (max-width:1300px){
+    .container{
+        max-width: 1000px;
+    }
+
+    .invite__pic{
+        display: none;
+    }
+
+    .invite__container{
+        flex-basis: 100%;
+    }
+
+    .pros__container{
+        padding-left: 40px;
+        width: fit-content;
+    }
+
+    .slider-desc{
+        width: 440px;
+        margin-left: 0;
+    }
+
+    .pros__noslider{
+        flex-basis: 310px;
+    }
+
+    .pros__description{
+        width: 310px;
+    }
+
+    .slider-desc .slick-arrow.slick-arrow.slick-prev{
+        left: 245px;
+    }
+    
+    .slider-desc .slick-arrow.slick-arrow.slick-next{
+        left: 330px;
+    }
+
+    .about__desc{
+        width: 522px;
+    }
+
+    .about__facts{
+        width: 522px;
+        height: 245px;
+        padding-top: 36px;
+    }
+    
+    .about__fact{
+        max-width: 480px;
+        margin-left: 40px;
+    }
+
+    .registration__title{
+        font-size: 28px;
+        line-height: 33px;
+        margin-left: 70px;
+    }
+    
+    .about-slider .slick-arrow.slick-arrow.slick-next{
+        right: 0;
+    }
+
+    .course{
+        flex-basis: 290px;
+        height: 121px;
+        padding-left: 2.2%;
+    }
+
+    .webinar{
+        flex-basis: 290px;
+        height: 167px;
+        padding-left: 2.2%;
+    }
+
+    .webinar__inline{
+        padding-top: 17px;
+        margin-left: 25px;
+    }
+
+    .menu__scroller{
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width:1000px){
+    .invite__pic{
+        display: none;
+    }
+
+    .registration{
+        height: fit-content;
+    }
+    
+    .course{
+        flex-basis: 347px;
+    }
+
+    .webinar{
+        flex-basis: 347px;
+    }
+
+    .invite__container{
+        flex-basis: 100%;
+    }
+
+    .slider-desc{
+        width: 250px;
+    }
+
+    .registration{
+        flex-wrap: wrap;
+    }
+
+    .registration__title{
+        margin-top: 70px;
+    }
+
+    .registration__section{
+        margin: 0 auto 65px;
+    }
+
+    .form{
+        margin: 0 auto;
+    }
+
+    .about__container{
+        flex-wrap: wrap;
+    }
+
+    .about__card{
+        margin: 0 auto;
+    }
+
+    .about__teacher_top{
+        display: block;
+    }
+    
+    .about__teacher_bottom{
+        display: none;
+    }
+
+    .about{
+        margin-top: 65px;
+    }
+
+    .about__desc{
+        margin: 65px auto 0;
+    }
+    
+    .about-slider .slick-arrow.slick-arrow.slick-next{
+        bottom: 22%;
+    }
+}
+
+
+@media(max-width:760px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pros__container{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+
+        padding-left: 15%;
+    }
+
+    .slider-desc{
+        width: 100%;
+        margin-left: -40px;
+        margin-bottom: 41px;
+    }
+
+    .pros__noslider{
+        margin-bottom: 60px;
+    }
+
+    .slider-desc .slick-arrow{
+        bottom: 85px;
+    }
+
+    .course{
+        flex-basis: 210px;
+        height: 95px;
+    }
+
+    .webinar{
+        flex-basis: 210px;
+        height: 95px;
+    }
+
+    .webinar__inline{
+        width: 210px;
+    }
+    
+    .course__section{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .course__type{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .courses__img{
+        width: 41px;
+        height: 41px;
+
+        margin-left: 26px;
+        margin-right: 23px;
+    }
+
+    .webinar__inline{
+        padding-top: 19px;
+        margin-left: 20px;
+    }
+
+    .webinar__title{
+        max-width: 207px;
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .registration__title{
+        width: 506px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+
+        margin: 41px auto 0;
+        
+    }
+
+    .registration__section{
+        margin-bottom: 0;
+    }
+
+    .form__title{
+        margin-top: 24px;
+    }
+
+    .about__facts{
+        width: 382px;
+    }
+
+    .pros__title, .courses__title, .webinars__title{
+        padding-left: 20px;
+    }
+
+    .invite__input{
+        display: none;
+    }
+
+    .invite__title{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .invite__subtitle{
+        text-align: center;
+    }
+
+    .invite__btn{
+        right: 33%;
+        top: 245px;
+    }
+}
+
+@media(max-width:620px){
+    .slider-desc{
+        width: 120%;
+    }
+}
+
+@media(max-width:560px){
+    .slider-desc{
+        width: 130%;
+    }
+
+    .about-slider{
+        width: 480px;
+        box-sizing: border-box;
+    }
+
+    .about__fact{
+        margin-left: 37px;
+    }
+
+    .invite__inner{
+        width: fit-content;
+        padding-left: 0;
+        margin-left: auto;
+    }
+
+
+    .invite__title{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+
+        max-width: 250px;
+
+        margin: 0 auto;
+    }
+
+    .invite__subtitle{
+        font-size: 16px;
+    }
+
+    .invite__btn{
+        font-size: 16px;
+        top: 180px;
+        right: 25%;
+    }
+
+    .invite__subscribe{
+        display: none;
+    }
+
+    .invite__social{
+        max-width: 180px;
+    }
+
+    .pros__title{
+        display: none;
+    }
+
+    .slider-desc{
+        width: 150%;
+    }
+
+    .pros__subtitle{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .slider-desc__title{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .slider-desc__more{
+        font-size: 12px;
+        line-height: 14px;
+
+        left: 36%
+    }
+
+    .slider-desc__element{
+        height: 195px;
+    }
+
+    .slider-desc__pic{
+        padding-top: 40px;
+    }
+
+    .pros__description{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+
+        max-width: 273px;
+    }
+
+    .pros__btn{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .slider-desc{
+        margin-bottom: 25px;
+    }
+
+    .pros__description{
+        margin-bottom: 40px;
+    }
+
+    .slider-desc .slick-arrow.slick-prev{
+        left: 200px;
+    }
+    
+    .slider-desc .slick-arrow.slick-next{
+        left: 260px;
+    }
+
+    .about__name{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .about__card{
+        height: 265px;
+    }
+
+    .about__pic{
+        padding-top: 25px;
+        width: 65px;
+        height: 90px;
+    }
+
+    .about__position{
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 261px;
+
+        margin-top: 25px;
+    }
+
+    .about__fact{
+        margin-left: 20px;
+        max-width: 272px;
+
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .about-slider .slick-arrow.slick-next{
+        background: none;
+    }
+
+    .about__desc{
+        width: 100%;
+    }
+
+    .courses{
+        margin-top: 30px;
+    }
+
+    .courses__title{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .course{
+        flex-basis: 280px;
+    }
+
+    .showmore__btn{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .webinar{
+        flex-basis: 280px;
+    }
+
+    .registration__title{
+        font-size: 18px;
+        line-height: 21px;
+
+        width: fit-content;
+    }
+
+    .form__title{
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .input{
+        padding-top: 12px;
+    }
+
+    .registration__form{
+        width: 220px;
+    }
+
+    .form__btn{
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media(min-width:480px) and (max-width:559px){
+    .slider-desc{
+        width: 125%;
+    }
+    
+
+}
