@@ -935,6 +935,10 @@ html,body
     z-index: 50;
 }
 
+.form__select{
+    -webkit-appearance: none;
+}
+
 /* -----MEDIA----- */
 
 @media(max-width:1400px){
