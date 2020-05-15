@@ -1,0 +1,124 @@
+body{
+    background: #111;
+    color: #aaa;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.main{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.main__selection{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.main__input{
+    margin-left: 20px;
+    background: none;
+}
+
+#file-upload-button{
+    color: #aaa;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.main__title{
+    text-transform: uppercase;
+}
+
+.main__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#app{
+    width: 800px;
+    height: 480px;
+
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+.btn {
+    border: 2px solid #fd3a95;
+    font-weight: 700;
+    color: #e9f32d;
+    text-shadow: 2px 2px 0px #fd3a95;
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s linear color;
+    transition: .3s linear background-color;
+    transition: .3s linear text-shadow;
+}
+
+.btn__file{
+    margin-bottom: 10px;
+}
+
+.btn__secondary{
+    width: 100%;
+}
+
+.buttons__row{
+    width: 100%;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #fd3a95;
+    text-shadow: 2px 2px 0px #e9f32d;
+}
+
+.btn__primary{
+    font-size: 16px;
+    width: 47%;
+
+    text-align: center;
+}
+  
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+.main__title{
+    font-size: 72px;
+    font-weight: 700;
+    color: #e9f32d;
+    text-shadow: 6px 6px 0px #fd3a95;
+}
+
+.pixels__wrapper{
+    width: 100%;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
