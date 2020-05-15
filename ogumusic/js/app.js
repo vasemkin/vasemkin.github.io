@@ -61,6 +61,7 @@ let toGray = () => {
 const synth = new Tone.Synth().toMaster();
 
 let play = () => {
+    document.querySelector('.pixels__wrapper').innerHTML = '';
     synth.triggerAttackRelease(88, '8n');
 
     let data = ctx.getImageData(0, 0, 3200, 1920);
@@ -95,5 +96,7 @@ let play = () => {
     setTimeout(() => {
         Tone.Transport.stop();
     }, 10000);
+
+    notes.forEach(el => document.querySelector('.pixels__wrapper').innerHTML += el + 'hz' + ' ');
     
 }
