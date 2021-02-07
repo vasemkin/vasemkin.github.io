@@ -136,9 +136,9 @@ $('.doc').on('click', async function() {
         await showStatus(statuses[Math.floor(Math.random() * statuses.length)]);
 
         const checkWinner = () => {
-            const secret = Math.floor(Math.random() * 2);
+            const secret = Math.floor(Math.random() * 101);
             console.log(secret);
-            return secret == 1
+            return secret < 37
         }
 
         const showPrise = (win) => {
@@ -148,10 +148,10 @@ $('.doc').on('click', async function() {
                 try {
 
                     if (win === true) {
-                        document.querySelector('.endgame__text').innerHTML = 'поздравляем! ты достиг королвевского резултата. дарим тебе скидку 10% на мерч - промокод GAME10';
+                        document.querySelector('.endgame__text').innerHTML = 'поздравляем! ты достиг королвевского результата. дарим тебе скидку 10% на мерч - промокод GAME10';
                         document.querySelector('.prise').classList.add('winner');
                     } else {
-                        document.querySelector('.endgame__text').innerHTML = 'обычный ершик. ничего страшного, с должным упорством ты достишнешь цели. попробуй ещё раз';
+                        document.querySelector('.endgame__text').innerHTML = 'обычный ершик. ничего страшного, с должным упорством ты достигнешь цели. попробуй ещё раз';
                         document.querySelector('.prise').classList.add('loser');
                     }
     
