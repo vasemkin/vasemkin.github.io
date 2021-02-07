@@ -1,0 +1,184 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    background: #000;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto; 
+
+    position: relative;
+}
+
+.description{
+    margin-top: 30px;
+    color:#fff;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    padding: 20px;
+    border: 7px solid #FF0000;
+    color: #fff;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.doc{
+    background: url(img/contract.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    transform: scale(0);
+
+    position: absolute;
+
+    top: 250px;
+}
+
+#left_doc{
+    left: 150px;
+}
+
+#center_doc{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#right_doc{
+    right: 150px;
+}
+
+
+.endgame{
+    position: absolute;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.endgame__text{
+    max-width: 300px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.restart{    
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-family: inherit;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.restart:hover{
+    color: #000;
+    background: #fff;
+}
+
+.prise{
+    width: 100px;
+    height: 100px;
+}
+
+.winner {
+    background: url(img/golden.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.loser {
+    background: url(img/white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.game{
+    margin-top: 40px;
+    padding: 30px 50px;
+    max-width: 800px;
+    height: 600px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.floating {   
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+} 
+  
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 8px); } 
+    100%   { transform: translate(0, -0px); }     
+} 
+
+
+
+.status_text {
+    position: absolute;
+    left: 0;
+    bottom: 170px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    overflow: hidden;
+    font-size: 10px;
+    display: none; 
+  }
+  
+.status_text .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+@media (max-width: 768px) {
+
+    body{
+        font-size: 14px;
+    }
+
+    .endgame__text, .restart{
+        margin-left: 2px;
+        max-width: 200px;
+    }
+
+    .endgame{
+        bottom: 20px;
+    }
+
+    #left_doc{
+        left: 20px;
+    }
+    #right_doc{
+        right: 20px;
+    }
+}
