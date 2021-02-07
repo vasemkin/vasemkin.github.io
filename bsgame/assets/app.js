@@ -95,6 +95,7 @@ $('.doc').on('click', async function() {
 
                     var textWrapper = document.querySelector('.status_text');
                     textWrapper.style.display = 'block';
+                    textWrapper.style.opacity = '1';
                     textWrapper.innerHTML = status;
                     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
         
@@ -106,11 +107,11 @@ $('.doc').on('click', async function() {
                         duration: 1400,
                         delay: (el, i) => 30 * i
                     }).add({
-                        targets: '.ml16',
+                        targets: '.status_text',
                         opacity: 0,
-                        duration: 1000,
+                        duration: 400,
                         easing: "easeOutExpo",
-                        delay: 1000
+                        delay: 100
                     });
         
                     textAnim.finished.then(() =>{
@@ -120,7 +121,7 @@ $('.doc').on('click', async function() {
                     
                 } catch (error) {
                     
-                    reject(error);s
+                    reject(error);
 
                 }
 
@@ -135,8 +136,9 @@ $('.doc').on('click', async function() {
         await showStatus(statuses[Math.floor(Math.random() * statuses.length)]);
 
         const checkWinner = () => {
-            const secret = Math.floor(Math.random() * 101);
-            return secret == 47
+            const secret = Math.floor(Math.random() * 2);
+            console.log(secret);
+            return secret == 1
         }
 
         const showPrise = (win) => {
@@ -146,10 +148,10 @@ $('.doc').on('click', async function() {
                 try {
 
                     if (win === true) {
-                        document.querySelector('.endgame__text').innerHTML = 'поздравляю! ты достиг желаемого и состоишь в 1%. дарим тебе скидку 10% на мерч - промокод GAME10';
+                        document.querySelector('.endgame__text').innerHTML = 'поздравляем! ты достиг королвевского резултата. дарим тебе скидку 10% на мерч - промокод GAME10';
                         document.querySelector('.prise').classList.add('winner');
                     } else {
-                        document.querySelector('.endgame__text').innerHTML = 'обычный ершик. ничего страшного, с должным упорством ты достишнешь цели. попробуй ещё раз'
+                        document.querySelector('.endgame__text').innerHTML = 'обычный ершик. ничего страшного, с должным упорством ты достишнешь цели. попробуй ещё раз';
                         document.querySelector('.prise').classList.add('loser');
                     }
     
@@ -211,7 +213,7 @@ $('#restart').on('click', async function() {
             targets: '.main',
             opacity: [0, 1],
             easing : 'easeInOutExpo',
-            duration : 900
+            duration : 50
         });
 
         fadeIn.finished.then(() => {

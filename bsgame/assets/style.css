@@ -30,6 +30,15 @@ body,html{
     margin: 0 auto;
 }
 
+.logo a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logo a:visited{
+    color: #fff;
+}
+
 .doc{
     background: url(img/contract.png);
     width: 100px;
