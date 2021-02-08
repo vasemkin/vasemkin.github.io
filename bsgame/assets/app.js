@@ -138,7 +138,7 @@ $('.doc').on('click', async function() {
         const checkWinner = () => {
             const secret = Math.floor(Math.random() * 101);
             console.log(secret);
-            return secret < 37
+            return secret < 27
         }
 
         const showPrise = (win) => {
