@@ -1,5 +1,3 @@
-let imageLoader = document.getElementById('imageLoader');
-imageLoader.addEventListener('change', handleImage, false);
 let canvas = document.getElementById('app');
 let ctx = canvas.getContext('2d');
 

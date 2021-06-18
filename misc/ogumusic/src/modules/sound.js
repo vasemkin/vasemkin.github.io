@@ -1,5 +1,3 @@
-let imageLoader = document.getElementById('imageLoader');
-imageLoader.addEventListener('change', handleImage, false);
 let canvas = document.getElementById('app');
 let ctx = canvas.getContext('2d');
 
@@ -7,6 +5,7 @@ let ctx = canvas.getContext('2d');
 const synth = new Tone.Synth().toMaster();
 
 export const play = () => {
+    console.log('playing')
     document.querySelector('.pixels__wrapper').innerHTML = ''; //1
     synth.triggerAttackRelease(88, '8n'); //1
     let data = ctx.getImageData(0, 0, 3200, 1920); //1
