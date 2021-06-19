@@ -5,7 +5,7 @@ const { backgroundColor, backgroundColorDark } = config.header;
 
 export const HeaderContainer = styled.div`
   position: relative;
-  padding: 5em;
+  padding: 5em 10em;
   text-align: center;
   background: ${(props) => props.theme.mode === "light" ? backgroundColor : backgroundColorDark};
   background-repeat: no-repeat;

@@ -6,6 +6,7 @@ import { config } from "../config";
 import { Header } from "../Components/Header";
 import { Loader } from '../Components/Common'
 import { BlogContainer } from '../Components/Blog'
+import { Wrapper } from '../Components/Wrapper/Wrapper'
 import { Card } from '../Components/Blog/Card'
 
 const GET_POSTS = gql`
@@ -55,7 +56,7 @@ const Blog = () => {
   }, [loading, error, data]);
 
   return (
-    <>
+    <Wrapper>
       <Header />
       <BlogContainer>
         {
@@ -66,7 +67,7 @@ const Blog = () => {
             })
         }
       </BlogContainer>
-    </>
+    </Wrapper>
   );
 }
 

@@ -22,11 +22,11 @@ export const config = {
 
   // Header customization
   header: {
-    backgroundColor: '#f1f6f8', // can be a CSS gradient
-    backgroundColorDark: '#4C566A',
-    titleColor: '#ff5252',
-    titleColorDark: '#16a085',
-    subtitleColor: '#37474f',
-    subtitleColorDark: '#D8DEE9',
+    backgroundColor: '#fff', // can be a CSS gradient
+    backgroundColorDark: '#121212',
+    titleColor: '#121212',
+    titleColorDark: '#fafafa',
+    subtitleColor: '#121212',
+    subtitleColorDark: '#fafafa',
   },
 };

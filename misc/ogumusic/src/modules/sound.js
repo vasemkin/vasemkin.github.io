@@ -9,6 +9,7 @@ export const play = () => {
     document.querySelector('.pixels__wrapper').innerHTML = ''; //1
     synth.triggerAttackRelease(88, '8n'); //1
     let data = ctx.getImageData(0, 0, 3200, 1920); //1
+    
     let notes = []; //1
     for (let i = 0; i < data.data.length; i += 4) {//2
         i % (Math.ceil(data.data.length/100)) == 0 ? //3
