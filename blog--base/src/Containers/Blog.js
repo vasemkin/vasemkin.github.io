@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { gql } from "apollo-boost";
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from "@apollo/react-hooks";
 
 import { config } from "../config";
 import { Header } from "../Components/Header";
-import { Loader } from '../Components/Common'
-import { BlogContainer } from '../Components/Blog'
-import { Wrapper } from '../Components/Wrapper/Wrapper'
-import { Card } from '../Components/Blog/Card'
+import { Loader } from "../Components/Common";
+import { BlogContainer } from "../Components/Blog";
+import { Wrapper } from "../Components/Wrapper/Wrapper";
+import { Card } from "../Components/Blog/Card";
 
 const GET_POSTS = gql`
 {
@@ -37,7 +37,7 @@ const GET_POSTS = gql`
     }
   }
 }
-`
+`;
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -46,11 +46,11 @@ const Blog = () => {
   useEffect(() => {
     if (!loading) {
       if (error) {
-        console.error(error)
+        console.error(error);
       }
 
       if (data) {
-        setPosts(data?.repository?.issues?.nodes)
+        setPosts(data?.repository?.issues?.nodes);
       }
     }
   }, [loading, error, data]);
@@ -59,16 +59,16 @@ const Blog = () => {
     <Wrapper>
       <Header />
       <BlogContainer>
-        {
-          loading
-          ? <Loader />
-          : posts.map((v, i) => {
-              return <Card blog={v} key={i} />;
-            })
-        }
+        {loading ? (
+          <Loader />
+        ) : (
+          posts.map((v, i) => {
+            return <Card blog={v} key={i} />;
+          })
+        )}
       </BlogContainer>
     </Wrapper>
   );
-}
+};
 
 export default Blog;
