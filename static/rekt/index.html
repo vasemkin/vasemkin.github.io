@@ -15,11 +15,11 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-theme="gaia" style="--theme:gaia;">
 <h2>Введение</h2>
-<p>Утром, 9 мая, Fortress Protocol подвергся хакерской атаке. Основной причиной атаки послужил изъян в governance-контракте и the манипуляции с оркалом Umbrella Network.</p>
+<p>Утром, 9 мая, Fortress Protocol подвергся хакерской атаке. Основными причинами атаки послужили изъян в governance-контракте и уязвимость оракула Umbrella Network.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-theme="gaia" style="--theme:gaia;">
 <h2>tl;dr || DYOR</h2>
-<p>Fortress -- это алгоритмический денежный рынок и протокол синтетических стейблкоинов, предназначенный для безопасного и надежного кредитования и кредитования пользователей в Binance Smart Chain.</p>
+<p>Fortress -- это алгоритмический денежный рынок и протокол синтетических стейблкоинов, предназначенный для безопасного и надежного кредитования пользователей в Binance Smart Chain.</p>
 <p>Адреса, задействованные в атаке, перечислены ниже:</p>
 <ul>
 <li><a href="https://bscscan.com/address/0xA6AF2872176320015f8ddB2ba013B38Cb35d22Ad">Кошелек хакера BSC</a></li>
@@ -31,7 +31,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-theme="gaia" style="--theme:gaia;">
 <h2>Подготовка к атаке</h2>
 <p>Подготовка к атаке началась <a href="https://etherscan.io/txs?a=0xA6AF2872176320015f8ddB2ba013B38Cb35d22Ad">как минимум за 19 дней</a> до совершения.</p>
-<p>29 апреля хакер <a href="https://etherscan.io/tx/0x1f1b43b6a56698af777c8c8b7e70eb77f10ff08bd8518c1685b9c19528e3daa5">получил 20ETH на TornadoCash</a> (протокол для осуществления частных транзакций в сети Ethereum, простыми словами миксер), и отправил 12.4ETH на BSC, используя <a href="https://cbridge.celer.network/#/transfer">Cbridge</a>.</p>
+<p>29 апреля хакер <a href="https://etherscan.io/tx/0x1f1b43b6a56698af777c8c8b7e70eb77f10ff08bd8518c1685b9c19528e3daa5">получил 20 ETH на TornadoCash</a> (протокол для осуществления частных транзакций в сети Ethereum, простыми словами миксер), и отправил 12.4 ETH на BSC, используя <a href="https://cbridge.celer.network/#/transfer">Cbridge</a>.</p>
 <p>Стоит заметить что <a href="https://etherscan.io/tx/0x36a0cdb1403ec2026b3878e23cec8904d142ef4b81c6fdeec0b694d7cb0c19c9">выведены деньги были тем же способом.</a></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-theme="gaia" style="--theme:gaia;">
@@ -41,7 +41,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-theme="gaia" style="--theme:gaia;">
 <h2>$FTS</h2>
 <p><a href="https://bscscan.com/address/0x4437743ac02957068995c48e08465e0ee1769fbe">$FTS</a> -- governance токен Fortress Protocol. Он был выпущен 21 апреля 2022 года с в количестве 10,000,000.</p>
-<p>Благодаря низкой цене $FTS хакер потратил всего 11.4 ETH на покупку 400,000 $FTS tokens, что представляет из себя 4% всего supply.</p>
+<p>Благодаря низкой цене $FTS, хакер потратил всего 11.4 ETH на покупку 400,000 $FTS, что представляет из себя 4% всего supply.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-theme="gaia" style="--theme:gaia;">
 <h2>Вредоносный proposal</h2>
@@ -61,25 +61,24 @@
         ...
     }
 </code></pre>
-<p><code>quorumVotes()</code> представляет из себя 400000$FST.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">quorumVotes</span>(<span class="hljs-params"></span>) public pure returns (uint) { <span class="hljs-keyword">return</span> <span class="hljs-number">400000e18</span>; } <span class="hljs-comment">// 400,000 = 4% of FST</span>
+</code></pre>
 <p>4% токенов -- одно из условий прохождения пропоузала.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-theme="gaia" style="--theme:gaia;">
-<h2>Контракт с атакой</h2>
-<p>После окончания голосования, пропоузал проходит одобрение с периодом ожидания в два дня перед запуском.</p>
-<p>Спустя два дня, 9-го Мая, пользователь создает атакующий контракт и официально запускает атаку.</p>
+<h2>Вредоносный контракт</h2>
+<p>После окончания голосования, пропоузал проходит одобрение. Для вступления в силу нужно подождать два дня.</p>
+<p>Спустя два дня, 9-го мая, пользователь создает еще один вредоносный контракт и официально запускает атаку.</p>
 <p>Заключается она в изменении кредитного плеча $FTS с <code>0</code> до <code>0.7</code>. Это позволяет хакеру использовать 70% ценности приобритенных токенов для выпуска кредитов от лица протокола.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-theme="gaia" style="--theme:gaia;">
 <h2>Collateral price contract</h2>
-<p>Fortress <a href="https://bscscan.com/address/0x00fcF33BFa9e3fF791b2b819Ab2446861a318285">контракт для цен</a>, который обращается к разным ораклам для разных токенов</p>
+<p>Fortress Protocol использует <a href="https://bscscan.com/address/0x00fcF33BFa9e3fF791b2b819Ab2446861a318285">контракт для цен</a>, который обращается к разным ораклам для разных токенов</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">getPrice</span>(<span class="hljs-params">address underlying</span>) internal view returns (uint) {
         <span class="hljs-comment">// ... if statements for other tokens</span>
         } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (underlying == <span class="hljs-variable constant_">FTS_ADDRESS</span>) {
-            <span class="hljs-comment">// Handle Umbrella supported tokens.</span>
             <span class="hljs-keyword">return</span> <span class="hljs-title function_">getUmbrellaPrice</span>(ftsKey);
         <span class="hljs-keyword">else</span> {
-            <span class="hljs-comment">// Handle Chainlink supported tokens.</span>
             <span class="hljs-keyword">return</span> <span class="hljs-title function_">getChainlinkPrice</span>(<span class="hljs-title function_">getFeed</span>(underlying));
         }
     }
@@ -99,13 +98,11 @@
       power += balance; <span class="hljs-comment">// no need for safe math, if we overflow then we will not have enough power</span>
     }
     <span class="hljs-built_in">require</span>(i &gt;= requiredSignatures, <span class="hljs-string">&quot;not enough signatures&quot;</span>); <span class="hljs-comment">// &lt;---!!</span>
-    <span class="hljs-comment">// we turn on power once we have proper DPoS</span>
-    <span class="hljs-comment">// require(power * 100 / staked &gt;= 66, &quot;not enough power was gathered&quot;);</span>
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-theme="gaia" style="--theme:gaia;">
 <h2>Уязвимость Umbrella</h2>
-<p>Пока количество подписей превышает значение <code>requiredSignatures</code>, проверка того, имеет ли подписавший право на цену, не выполняется. Это позволяет злоумышленнику создать подпись с любой учетной записью, чтобы указать цену.</p>
+<p>Пока количество подписей превышает значение <code>requiredSignatures</code>, проверка того, имеет ли подписавший право выставлять цену актива, не выполняется. Это позволило хакеру обойти вспе проверки и указать цену $FTS, которая выгодна</p>
 <p>После атаки Umbrella Network исправила уязвимость и выпустила <a href="https://bscscan.com/address/0x49D0D57cf6697b6a44050872CDb760945B710Aab">обновленный контракт</a>.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-theme="gaia" style="--theme:gaia;">
